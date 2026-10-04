@@ -1,0 +1,762 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Tổng Kết Push Sale Tháng 9 GĐ2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: hero gradient + stacked report sections, same structure as báo cáo Giai đoạn 1 */
+:root{
+  --rose:#e11d48; --rose-deep:#9f1239;
+  --pink:#ec4899; --pink-deep:#be185d; --amber:#f59e0b; --amber-deep:#b45309;
+  --emerald:#059669; --emerald-deep:#047857; --emerald-bg:#d1fae5;
+  --orange:#f59e0b; --orange-bg:#fef3c7; --yellow:#fbbf24;
+  --cream:#f8fafc; --paper:#ffffff; --ink:#0f172a; --ink-soft:#64748b; --line:#e2e8f0;
+  --warn-bg:#fef3c7; --warn:#b45309; --stat-bg:#fdf6f8; --gold-bg:#fff0f8;
+  --shout-a:#fff0f8; --shout-b:#fff7ed; --star-a:#ecfdf5; --star-b:#fffbeb;
+  --guide-bg:#fff1f2; --guide-line:#fecdd3; --th-bg:#f1f5f9;
+  --radius:18px;
+  --shadow:0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --cream:#140d12; --paper:#1f161c; --ink:#f8ecf1; --ink-soft:#b6a3ad; --line:#3a2a33;
+    --emerald-bg:#0f3a2c; --emerald-deep:#6ee7b7; --orange-bg:#3b2a0d; --warn-bg:#3b2a0d; --warn:#fbbf24;
+    --stat-bg:#2a1d24; --gold-bg:#3a1a2b; --shout-a:#33182a; --shout-b:#33240f; --star-a:#0f2f25; --star-b:#2e2710;
+    --guide-bg:#2e1520; --guide-line:#5b2336; --th-bg:#2a1d24; --pink:#f472b6; --amber:#fbbf24;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --cream:#140d12; --paper:#1f161c; --ink:#f8ecf1; --ink-soft:#b6a3ad; --line:#3a2a33;
+  --emerald-bg:#0f3a2c; --emerald-deep:#6ee7b7; --orange-bg:#3b2a0d; --warn-bg:#3b2a0d; --warn:#fbbf24;
+  --stat-bg:#2a1d24; --gold-bg:#3a1a2b; --shout-a:#33182a; --shout-b:#33240f; --star-a:#0f2f25; --star-b:#2e2710;
+  --guide-bg:#2e1520; --guide-line:#5b2336; --th-bg:#2a1d24; --pink:#f472b6; --amber:#fbbf24;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums;}
+.display{font-family:'Space Grotesk',system-ui,sans-serif;}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:0 70px;}
+
+.hero{position:relative;background:linear-gradient(120deg,#e11d48 0%,#ec4899 50%,#f59e0b 100%);color:#fff;padding:46px 16px 38px;margin-bottom:26px;overflow:hidden;}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(255,255,255,0.22) 0,transparent 45%),radial-gradient(circle at 10% 90%,rgba(255,255,255,0.15) 0,transparent 40%);}
+.hero-inner{max-width:1068px;margin:0 auto;position:relative;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.35);padding:6px 13px;border-radius:100px;margin-bottom:18px;font-weight:600;}
+.hero h1{font-size:clamp(26px,4vw,40px);margin:0 0 10px;font-weight:800;letter-spacing:-0.01em;text-wrap:balance;}
+.hero p.sub{margin:0 0 6px;color:#fff0f6;font-size:15px;max-width:700px;}
+.hero .highlight{color:#fde68a;font-weight:700;}
+.milestone-banner{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.4);border-radius:16px;padding:16px 20px;margin-top:22px;}
+.milestone-banner .icon{font-size:32px;flex-shrink:0;}
+.milestone-banner b{color:#fde68a;display:block;font-family:'Space Grotesk',sans-serif;font-size:15px;margin-bottom:2px;}
+.milestone-banner span{font-size:13px;color:#fff0f6;}
+
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);min-width:0;}
+.section{margin-bottom:32px;}
+.section-head{margin-bottom:16px;}
+.section-head .eyebrow-inline{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:4px;display:block;}
+.section-head h2{font-family:'Space Grotesk',sans-serif;font-size:22px;margin:0;font-weight:700;text-wrap:balance;}
+.section-head p{margin:4px 0 0;font-size:13.5px;color:var(--ink-soft);}
+
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+@media(max-width:800px){.stat-grid{grid-template-columns:repeat(2,1fr);}}
+.stat-card{padding:16px 16px 14px;border-top:4px solid var(--amber);}
+.stat-card:nth-child(2){border-top-color:var(--emerald);}
+.stat-card:nth-child(3){border-top-color:var(--pink);}
+.stat-card:nth-child(4){border-top-color:var(--pink-deep);}
+.stat-card:nth-child(5){border-top-color:var(--orange);}
+.stat-card:nth-child(6){border-top-color:var(--rose);}
+.stat-label{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;margin-bottom:8px;}
+.stat-value{font-family:'Space Grotesk',sans-serif;font-size:25px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;}
+.stat-value small{font-size:13px;font-weight:500;color:var(--ink-soft);}
+.stat-foot{font-size:12px;color:var(--ink-soft);margin-top:6px;}
+.stat-value.good{color:var(--emerald-deep);}
+.stat-value.gold{color:var(--pink);}
+.stat-value.bad{color:var(--rose);}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:800px){.two-col{grid-template-columns:1fr;}}
+.point-card{padding:20px;}
+.point-card h3{font-family:'Space Grotesk',sans-serif;font-size:16px;margin:0 0 12px;font-weight:700;}
+.point-card.good{border-top:4px solid var(--emerald);}
+.point-card.warn{border-top:4px solid var(--orange);}
+.point-card ul{margin:0;padding-left:18px;font-size:13.5px;}
+.point-card li{margin-bottom:9px;}
+
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:800px){.prod-grid{grid-template-columns:1fr;}}
+.prod-card{padding:20px;}
+.prod-card h3{font-family:'Space Grotesk',sans-serif;font-size:16px;margin:0 0 4px;font-weight:700;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;}
+.pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:var(--emerald-bg);color:var(--emerald-deep);white-space:nowrap;}
+.pill.warn{background:var(--warn-bg);color:var(--warn);}
+.bar{background:var(--line);border-radius:100px;height:10px;overflow:hidden;margin:12px 0 12px;}
+.bar > div{height:100%;background:linear-gradient(90deg,#e11d48,#f59e0b);}
+.bar.done > div{background:linear-gradient(90deg,#059669,#34d399);}
+.kv{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-soft);padding:3px 0;}
+.kv b{color:var(--ink);font-variant-numeric:tabular-nums;}
+
+/* Giám sát trong ca */
+.guide{background:var(--guide-bg);border:1px solid var(--guide-line);border-radius:var(--radius);padding:22px;}
+.guide .lead{font-size:14px;margin:0 0 18px;}
+.guide .lead b{color:var(--rose);}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px;}
+@media(max-width:800px){.pillars{grid-template-columns:1fr;}}
+.pillar{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0;}
+.pillar h4{font-family:'Space Grotesk',sans-serif;margin:0 0 8px;font-size:15px;}
+.pillar ul{margin:0;padding-left:18px;font-size:13px;}
+.pillar li{margin-bottom:6px;}
+.tbl-wrap{overflow-x:auto;border-radius:14px;border:1px solid var(--line);background:var(--paper);}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:560px;}
+th{background:var(--th-bg);text-align:left;padding:10px 12px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);}
+td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top;}
+td:first-child{font-weight:700;white-space:nowrap;}
+.rule{margin-top:16px;font-size:13.5px;background:var(--paper);border-left:4px solid var(--rose);border-radius:10px;padding:12px 14px;}
+
+.action-card{padding:20px 22px;border-top:4px solid var(--amber);}
+.action-card h3{font-family:'Space Grotesk',sans-serif;font-size:16px;margin:0 0 12px;font-weight:700;}
+.action-card ol{margin:0;padding-left:20px;font-size:13.5px;}
+.action-card li{margin-bottom:10px;}
+.action-card li b{color:var(--amber-deep);}
+
+.podium{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px;}
+@media(max-width:800px){.podium{grid-template-columns:1fr;}}
+.podium-card{padding:18px;text-align:center;}
+.podium-card.rank1{border-top:4px solid var(--yellow);}
+.podium-card.rank2{border-top:4px solid #cbd5e1;}
+.podium-card.rank3{border-top:4px solid #fed7aa;}
+.podium-medal{font-size:28px;margin-bottom:6px;}
+.podium-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14.5px;}
+.podium-role{font-size:11px;color:var(--ink-soft);margin-bottom:8px;}
+.podium-tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;background:var(--gold-bg);color:var(--pink);margin-bottom:8px;}
+.podium-rev{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--emerald-deep);font-size:14px;}
+.podium-qty{font-size:11.5px;color:var(--ink-soft);margin-top:2px;}
+/* Bảng điểm 3 tiêu chí */
+.scoring-intro{padding:20px;border-top:4px solid var(--pink-deep);}
+.scoring-intro h3{font-family:'Space Grotesk',sans-serif;font-size:16px;margin:0 0 10px;font-weight:700;}
+.criteria-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px;}
+@media(max-width:700px){.criteria-grid{grid-template-columns:1fr;}}
+.crit-card{border-radius:14px;padding:14px 16px;text-align:center;}
+.crit-card.c1{background:var(--gold-bg);border:1px solid var(--guide-line);}
+.crit-card.c2{background:var(--shout-b);border:1px solid rgba(245,158,11,0.35);}
+.crit-card.c3{background:var(--star-a);border:1px solid rgba(5,150,105,0.3);}
+.crit-weight{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:800;line-height:1;}
+.crit-card.c1 .crit-weight{color:var(--rose);}
+.crit-card.c2 .crit-weight{color:var(--amber);}
+.crit-card.c3 .crit-weight{color:var(--emerald);}
+.crit-name{font-size:12px;font-weight:700;color:var(--ink);margin:4px 0 2px;}
+.crit-desc{font-size:10.5px;color:var(--ink-soft);}
+.score-table{font-size:12.5px;min-width:640px;}
+.score-table th{color:var(--pink-deep);}
+.score-table th.num,.score-table td.num{text-align:center;}
+.score-table td.num{font-family:'JetBrains Mono',monospace;font-weight:700;font-variant-numeric:tabular-nums;}
+.score-table tr.r1,.score-table tr.r3{background:var(--shout-b);}
+.score-table tr.r2{background:var(--shout-a);}
+.score-table .total{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:800;}
+.score-table .total.t1{color:#f59e0b;}
+.score-table .total.t2{color:#94a3b8;}
+.score-table .total.t3{color:#fb923c;}
+.score-table .pt{font-size:10px;color:var(--ink-soft);font-weight:400;}
+.score-note{font-size:11.5px;color:var(--ink-soft);margin:10px 0 0;}
+.shoutout.warm{background:linear-gradient(100deg,var(--shout-b),var(--orange-bg));border-color:rgba(245,158,11,0.35);}
+.shoutout.pt-hero{background:linear-gradient(100deg,var(--star-b),var(--shout-b));border-color:rgba(245,158,11,0.3);}
+
+.shoutout{display:flex;gap:14px;padding:18px 20px;border-radius:16px;background:linear-gradient(100deg,var(--shout-a),var(--shout-b));border:1px solid rgba(236,72,153,0.25);margin-bottom:12px;}
+.shoutout .emoji{font-size:26px;flex-shrink:0;}
+.shoutout b{font-family:'Space Grotesk',sans-serif;display:block;margin-bottom:3px;font-size:14.5px;color:var(--ink);}
+.shoutout p{margin:0;font-size:13.5px;color:var(--ink-soft);}
+.shoutout.star{background:linear-gradient(100deg,var(--star-a),var(--star-b));border-color:rgba(5,150,105,0.3);}
+
+.emp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+@media(max-width:800px){.emp-grid{grid-template-columns:1fr;}}
+.emp-card{padding:18px 20px;}
+.emp-card.top{border-left:4px solid var(--pink);}
+.emp-card.low{border-left:4px solid var(--orange);}
+.emp-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;gap:10px;}
+.emp-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15.5px;}
+.emp-role{font-size:11.5px;color:var(--ink-soft);}
+.emp-badge{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:100px;white-space:nowrap;background:var(--emerald-bg);color:var(--emerald-deep);}
+.emp-badge.warn{background:var(--warn-bg);color:var(--warn);}
+.emp-badge.gold{background:var(--gold-bg);color:var(--pink);}
+.emp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px;}
+.emp-stat{text-align:center;background:var(--stat-bg);border-radius:10px;padding:8px 4px;}
+.emp-stat .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;color:var(--amber-deep);}
+.emp-stat .l{font-size:9.5px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.03em;margin-top:2px;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .emp-stat .v{color:var(--amber);}}
+:root[data-theme="dark"] .emp-stat .v{color:var(--amber);}
+.emp-notes{font-size:12.5px;}
+.emp-notes .row{display:flex;gap:7px;margin-bottom:6px;align-items:flex-start;}
+.emp-notes .tag{flex-shrink:0;font-weight:700;}
+.emp-notes .tag.good{color:var(--emerald-deep);}
+.emp-notes .tag.note{color:var(--ink-soft);}
+.emp-notes .tag.warn{color:var(--warn);}
+
+.closing{background:linear-gradient(120deg,#9f1239 0%,#e11d48 50%,#f59e0b 100%);color:#fff;border-radius:var(--radius);padding:34px 24px;text-align:center;}
+.closing .rocket{font-size:38px;margin-bottom:10px;}
+.closing h3{font-family:'Space Grotesk',sans-serif;font-size:21px;margin:0 0 10px;font-weight:800;}
+.closing p{font-size:14px;color:#fff0f6;max-width:660px;margin:0 auto;}
+.closing .cta-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px;}
+.closing .cta-pill{background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.5);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;padding:9px 16px;border-radius:100px;}
+.closing .sign{margin-top:20px;font-size:12.5px;color:#ffe0ee;font-family:'JetBrains Mono',monospace;}
+.pivot-card{padding:22px;border-top:4px solid var(--rose);}
+.pivot-card p.lead{font-size:13.5px;color:var(--ink-soft);margin:0 0 18px;}
+.pivot-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px;}
+@media(max-width:700px){.pivot-stats{grid-template-columns:1fr;}}
+.pstat{background:var(--gold-bg);border:1px solid var(--guide-line);border-radius:12px;padding:14px;text-align:center;}
+.pstat .pv{font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:800;color:var(--rose);font-variant-numeric:tabular-nums;}
+.pstat .pl{font-size:11.5px;color:var(--ink);font-weight:700;text-transform:uppercase;margin-top:2px;}
+.pstat .pp{font-size:11.5px;color:var(--ink-soft);margin-top:4px;}
+.why-title{font-family:'Space Grotesk',sans-serif;font-size:16px;margin:0 0 10px;font-weight:700;}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px;}
+.why-grid:last-child{margin-bottom:0;}
+.why-grid.three{grid-template-columns:repeat(3,1fr);}
+@media(max-width:800px){.why-grid,.why-grid.three{grid-template-columns:1fr;}}
+.gd2-arrow{display:flex;align-items:flex-start;gap:12px;background:linear-gradient(90deg,var(--guide-bg),var(--shout-b));border:1px solid var(--guide-line);border-radius:14px;padding:14px 16px;min-width:0;}
+.gd2-arrow .a-icon{font-size:24px;flex-shrink:0;line-height:1.2;}
+.gd2-arrow b{font-family:'Space Grotesk',sans-serif;display:block;font-size:14.5px;color:var(--rose);margin-bottom:2px;}
+.gd2-arrow p{margin:0;font-size:13px;color:var(--ink-soft);}
+</style>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">📋 Báo Cáo Nội Bộ · Team Admin · Kohnan POS</span>
+    <h1 class="display">Tổng Kết Push Sale Tháng 9 - Giai Đoạn 2</h1>
+    <p class="sub">Chiến dịch Sữa Tắm On: The Body &amp; Xịt Muỗi Remos - kỳ 01/09 đến 30/09/2026. Tổng hợp kết quả toàn team và từng cá nhân, làm nền tảng bước vào <span class="highlight">Push Sale Tháng 10</span>.</p>
+    <div class="milestone-banner">
+      <span class="icon">🦟</span>
+      <div>
+        <b>Xịt Muỗi Remos vượt chỉ tiêu: 237/220 chai (107.7%)</b>
+        <span>Toàn team đạt <strong class="mono">1.069/1.220 chai (87.6%)</strong>, doanh thu Push Sale <strong class="mono">87.613.516 ₫</strong>. Sữa Tắm còn thiếu <strong>168 chai</strong> - đây là phần việc trọng tâm cần khắc phục.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- TỔNG QUAN -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Tổng Quan Toàn Team</span>
+      <h2>Kết Quả Giai Đoạn 2</h2>
+    </div>
+    <div class="stat-grid">
+      <div class="card stat-card">
+        <div class="stat-label">Tổng Chỉ Tiêu</div>
+        <div class="stat-value">1.220 <small>Chai</small></div>
+        <div class="stat-foot">Sữa Tắm 1.000 + Remos 220</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Đã Bán Lũy Kế</div>
+        <div class="stat-value good">1.069 <small>Chai</small></div>
+        <div class="stat-foot">Còn thiếu 151 chai so với chỉ tiêu</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Tiến Độ Hoàn Thành</div>
+        <div class="stat-value bad">87.6%</div>
+        <div class="stat-foot">Chưa về đích chỉ tiêu chung</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Doanh Thu Push Sale</div>
+        <div class="stat-value">87.613.516 <small>₫</small></div>
+        <div class="stat-foot">Tính theo Amount (Tax excl.)</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Tỷ Trọng Đóng Góp</div>
+        <div class="stat-value gold">2.29%</div>
+        <div class="stat-foot">Doanh thu Push Sale / Tổng doanh thu quầy</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-label">Tỷ Lệ Chốt Đơn TB</div>
+        <div class="stat-value">6.4%</div>
+        <div class="stat-foot">5/8 bạn đang dưới mức trung bình</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THEO SẢN PHẨM -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Theo Từng Sản Phẩm</span>
+      <h2>Sữa Tắm Chưa Đạt, Remos Vượt Chỉ Tiêu</h2>
+    </div>
+    <div class="prod-grid">
+      <div class="card prod-card">
+        <h3><span>🧴 Sữa Tắm On: The Body</span><span class="pill warn">Thiếu 168 chai</span></h3>
+        <div class="bar"><div style="width:83.2%"></div></div>
+        <div class="kv"><span>Đã bán / Target</span><b>832 / 1.000 chai</b></div>
+        <div class="kv"><span>Tiến độ</span><b>83.2%</b></div>
+        <div class="kv"><span>Doanh thu</span><b>75.620.600 ₫</b></div>
+        <div class="kv"><span>Tồn kho cuối kỳ</span><b>425 chai</b></div>
+      </div>
+      <div class="card prod-card">
+        <h3><span>🦟 Xịt Muỗi Remos</span><span class="pill">Vượt +17 chai</span></h3>
+        <div class="bar done"><div style="width:100%"></div></div>
+        <div class="kv"><span>Đã bán / Target</span><b>237 / 220 chai</b></div>
+        <div class="kv"><span>Tiến độ</span><b>107.7%</b></div>
+        <div class="kv"><span>Doanh thu</span><b>11.992.916 ₫</b></div>
+        <div class="kv"><span>Tồn kho cuối kỳ</span><b>268 chai</b></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ĐIỂM TỐT / CẦN CẢI THIỆN -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Nhận Xét Chung</span>
+      <h2>Điểm Tốt &amp; Điểm Cần Cải Thiện Của Team</h2>
+    </div>
+    <div class="two-col">
+      <div class="card point-card good">
+        <h3>✅ Điểm Tốt</h3>
+        <ul>
+          <li><b>Remos vượt chỉ tiêu 107.7%</b> - 237/220 chai, doanh thu gần 12 triệu đồng.</li>
+          <li><b>Doanh thu Push Sale 87.6 triệu đồng</b>, chiếm 2.29% doanh thu quầy (Tháng 8: 1.11%).</li>
+          <li><b>2 bạn hoàn thành 100% chỉ tiêu cá nhân:</b> Võ Đặng Tú Quyên (144/144) và Thanh Thảo (46/46).</li>
+          <li><b>Minh Thư dẫn đầu bảng điểm 3 tiêu chí (8.17 điểm)</b> - bán nhiều chai nhất (214) và chốt đơn cao nhất (8.7%) dù gánh target cao nhất team (303 chai).</li>
+        </ul>
+      </div>
+      <div class="card point-card warn">
+        <h3>⚠️ Điểm Cần Cải Thiện</h3>
+        <ul>
+          <li><b>Sữa Tắm - sản phẩm chủ lực - chỉ đạt 83.2%</b>, thiếu 168 chai; tồn kho còn 425 chai.</li>
+          <li><b>6/8 bạn chưa đạt chỉ tiêu cá nhân</b>; thấp nhất là Thùy Dương (35.6%) và Uyên Nhi (57.4%).</li>
+          <li><b>Tỷ lệ chốt đơn thấp ở nhiều bạn:</b> Uyên Nhi 5.7%, Thanh Thảo 5.5%, Quế Nhi 4.9%, Chúc Linh 4.0%, Thùy Dương 3.1% - đều dưới trung bình 6.4%.</li>
+          <li><b>Lượng khách lớn nhưng chưa chuyển thành đơn:</b> Uyên Nhi phục vụ 2.019 hóa đơn (nhiều nhất team) nhưng chỉ đạt 57.4% target.</li>
+          <li><b>Kết quả chênh lệch rõ giữa các ca:</b> những ca thiếu người giám sát, nhắc nhịp trực tiếp có kết quả Push Sale thấp hơn hẳn (xem mục lưu ý cho Admin bên dưới).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- LƯU Ý ADMIN -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Lưu Ý Quan Trọng Cho Các Bạn Admin</span>
+      <h2>Giám Sát - Động Viên - Hướng Dẫn Nhân Viên Trong Ca</h2>
+    </div>
+    <div class="guide">
+      <p class="lead">Theo quan sát thực tế trong Giai đoạn 2, <b>các ca không có Admin Chief trực cùng có kết quả Push Sale thấp hơn rõ rệt</b>. Push Sale chỉ đều tay khi mỗi ca có người dẫn nhịp. Từ kỳ tới, <b>Admin trực ca là người chịu trách nhiệm kết quả Push Sale của ca đó</b> - không chỉ bán cho riêng mình mà còn kéo cả ca cùng bán.</p>
+
+      <div class="pillars">
+        <div class="pillar">
+          <h4>👀 Giám Sát</h4>
+          <ul>
+            <li>Nắm target của ca ngay đầu ca, chia rõ ai đứng quầy nào.</li>
+            <li>Để ý trực tiếp tại quầy: khách thanh toán có được mời hay chưa.</li>
+            <li>Bạn nào bỏ lỡ lượt mời thì nhắc nhẹ ngay, không đợi cuối ca.</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <h4>💪 Động Viên</h4>
+          <ul>
+            <li>Khi ca đang chậm, đặt mục tiêu nhỏ: "2 tiếng tới cả ca thêm 5 chai".</li>
+            <li>Ghi nhận cả nỗ lực mời khách, không chỉ kết quả chốt.</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <h4>🎯 Hướng Dẫn</h4>
+          <ul>
+            <li>Đứng quầy làm mẫu câu mời 10 giây cho bạn mới hoặc bạn chốt thấp.</li>
+            <li>Ôn nhanh kịch bản xử lý từ chối (3S) trước giờ cao điểm.</li>
+            <li>Admin phải là người chốt tốt nhất ca - làm gương trước khi nhắc người khác.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Thời điểm</th><th>Việc Admin trực ca cần làm</th><th>Mục tiêu</th></tr></thead>
+          <tbody>
+            <tr><td>Đầu ca (5 phút)</td><td>Brief nhanh: target ca, sản phẩm ưu tiên, câu mời mẫu, tồn kho trên kệ.</td><td>Ai cũng biết hôm nay cần bán bao nhiêu</td></tr>
+            <tr><td>Giờ cao điểm</td><td>Đứng quầy cùng nhân viên, làm mẫu và hỗ trợ chốt đơn.</td><td>Không bỏ lỡ lượt khách đông</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="rule">📌 <b>Áp dụng cho:</b> Võ Đặng Tú Quyên, Tăng Quế Nhi, Phan Thị Chúc Linh, Nguyễn Ngọc Phụng. Tú Quyên (đạt 100%, chốt 7.5%) là hình mẫu cho vai trò vừa bán tốt vừa dẫn nhịp ca.</div>
+    </div>
+  </div>
+
+  <!-- KHUYẾN NGHỊ -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Hành Động Tiếp Theo</span>
+      <h2>Khuyến Nghị Cho Chiến Dịch Tháng 10</h2>
+    </div>
+    <div class="card action-card">
+      <h3>🎯 3 việc nên làm ngay từ đầu tháng 10</h3>
+      <ol>
+        <li><b>Mỗi ca có một người dẫn nhịp Push Sale.</b> Admin trực ca thực hiện đủ các mốc giám sát ở mục trên, chủ động làm mẫu câu mời tại quầy.</li>
+        <li><b>Nhân rộng cách mời khách của Minh Thư và Tú Quyên.</b> Hai bạn có tỷ lệ chốt cao nhất nhóm nhân viên (8.7% và 7.5%) - chia sẻ câu mời thực tế cho cả team trong buổi họp đầu tháng.</li>
+        <li><b>Nâng tỷ lệ chốt đơn toàn team.</b> Mục tiêu mỗi bạn đạt tối thiểu 6.5% trên mỗi ca hiện có; các bạn đang dưới mức trung bình xem lại câu mời 10 giây và kịch bản xử lý từ chối.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- HỆ THỐNG CHẤM ĐIỂM -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Hệ Thống Chấm Điểm 3 Tiêu Chí</span>
+      <h2>Bảng Điểm Cân Bằng - Nỗ Lực · Đóng Góp · Kỹ Năng Bán</h2>
+      <p>Cùng cách đánh giá Giai đoạn 1: điểm từng tiêu chí chuẩn hóa 0-10 theo thang min-max trong nhóm 8 nhân viên.</p>
+    </div>
+    <div class="card scoring-intro">
+      <h3>📐 Cơ Cấu Trọng Số</h3>
+      <div class="criteria-grid">
+        <div class="crit-card c1">
+          <div class="crit-weight">40%</div>
+          <div class="crit-name">% Hoàn Thành Target</div>
+          <div class="crit-desc">Đánh giá nỗ lực so với chỉ tiêu được giao cá nhân</div>
+        </div>
+        <div class="crit-card c2">
+          <div class="crit-weight">35%</div>
+          <div class="crit-name">Số Chai Tuyệt Đối</div>
+          <div class="crit-desc">Đóng góp thực tế vào target chung của cả team</div>
+        </div>
+        <div class="crit-card c3">
+          <div class="crit-weight">25%</div>
+          <div class="crit-name">Tỷ Lệ Chốt Đơn</div>
+          <div class="crit-desc">Kỹ năng thuyết phục, không phụ thuộc lượng khách được phục vụ</div>
+        </div>
+      </div>
+      <div class="tbl-wrap">
+        <table class="score-table">
+          <thead>
+            <tr>
+              <th>Nhân Viên</th>
+              <th class="num">% Target</th>
+              <th class="num">Điểm ×0.4</th>
+              <th class="num">Số Chai</th>
+              <th class="num">Điểm ×0.35</th>
+              <th class="num">Chốt Đơn</th>
+              <th class="num">Điểm ×0.25</th>
+              <th class="num">🏆 Tổng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="r1"><td><strong>🥇 Nguyễn Lê Minh Thư</strong></td><td class="num">70.6%</td><td class="num">2.17</td><td class="num">214</td><td class="num">3.50</td><td class="num">8.7%</td><td class="num">2.50</td><td class="num"><span class="total t1">8.17</span></td></tr>
+            <tr class="r2"><td><strong>🥈 Võ Đặng Tú Quyên</strong></td><td class="num">100.0%</td><td class="num">4.00</td><td class="num">144</td><td class="num">2.12</td><td class="num">7.5%</td><td class="num">1.96</td><td class="num"><span class="total t2">8.08</span></td></tr>
+            <tr class="r3"><td><strong>🥉 Tăng Quế Nhi</strong></td><td class="num">93.5%</td><td class="num">3.60</td><td class="num">116</td><td class="num">1.56</td><td class="num">4.9%</td><td class="num">0.80</td><td class="num"><span class="total t3">5.96</span></td></tr>
+            <tr><td>Thanh Thảo <span class="pt">(PT)</span></td><td class="num">100.0%</td><td class="num">4.00</td><td class="num">46</td><td class="num">0.18</td><td class="num">5.5%</td><td class="num">1.07</td><td class="num">5.25</td></tr>
+            <tr><td>Quách Vy <span class="pt">(PT)</span></td><td class="num">81.4%</td><td class="num">2.84</td><td class="num">48</td><td class="num">0.22</td><td class="num">7.5%</td><td class="num">1.96</td><td class="num">5.02</td></tr>
+            <tr><td>Lê Uyên Nhi</td><td class="num">57.4%</td><td class="num">1.35</td><td class="num">140</td><td class="num">2.04</td><td class="num">5.7%</td><td class="num">1.16</td><td class="num">4.55</td></tr>
+            <tr><td>Phan Thị Chúc Linh</td><td class="num">79.8%</td><td class="num">2.75</td><td class="num">79</td><td class="num">0.83</td><td class="num">4.0%</td><td class="num">0.40</td><td class="num">3.98</td></tr>
+            <tr><td>Phan Thị Thùy Dương <span class="pt">(PT)</span></td><td class="num">35.6%</td><td class="num">0.00</td><td class="num">37</td><td class="num">0.00</td><td class="num">3.1%</td><td class="num">0.00</td><td class="num">0.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="score-note">⚠️ Nhóm PT (Thanh Thảo, Quách Vy, Thùy Dương) chịu giới hạn cứng 79h/12 ca/tháng nên điểm "Số chai tuyệt đối" thấp hơn nhóm FT. Hướng cải thiện đúng là nâng tỷ lệ chốt đơn trên mỗi ca, không tăng số ca.</p>
+    </div>
+  </div>
+
+  <!-- VINH DANH TOP 3 -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Vinh Danh</span>
+      <h2>🏆 Top 3 Theo Hệ Thống Điểm 3 Tiêu Chí</h2>
+    </div>
+    <div class="podium">
+      <div class="card podium-card rank1">
+        <div class="podium-medal">🥇</div>
+        <div class="podium-name">Nguyễn Lê Minh Thư</div>
+        <div class="podium-role">CS Full-Time · 8.17 điểm</div>
+        <div class="podium-rev">17.485.599 ₫</div>
+        <div class="podium-qty">214 chai · 70.6% · Chốt 8.7%</div>
+      </div>
+      <div class="card podium-card rank2">
+        <div class="podium-medal">🥈</div>
+        <div class="podium-name">Võ Đặng Tú Quyên</div>
+        <div class="podium-role">Admin · 8.08 điểm</div>
+        <div class="podium-rev">12.246.693 ₫</div>
+        <div class="podium-qty">144 chai · 100.0% · Chốt 7.5%</div>
+      </div>
+      <div class="card podium-card rank3">
+        <div class="podium-medal">🥉</div>
+        <div class="podium-name">Tăng Quế Nhi</div>
+        <div class="podium-role">Admin · 5.96 điểm</div>
+        <div class="podium-rev">9.377.653 ₫</div>
+        <div class="podium-qty">116 chai · 93.5% · Chốt 4.9%</div>
+      </div>
+    </div>
+
+    <div class="shoutout">
+      <span class="emoji">🥇</span>
+      <div>
+        <b>Nguyễn Lê Minh Thư - Quán Quân 3 Tiêu Chí</b>
+        <p>Minh Thư đứng #1 nhờ đạt điểm tối đa ở 2/3 tiêu chí: <strong>bán nhiều chai nhất team (214 chai)</strong> và <strong>tỷ lệ chốt đơn cao nhất (8.7% - 168/1.941 hóa đơn)</strong>, trong khi gánh target cá nhân cao nhất team (303 chai). Tiến độ 70.6% là điểm duy nhất kéo điểm xuống - kỳ tới chỉ cần thêm khoảng 4 chai mỗi ca là chạm 100%.</p>
+      </div>
+    </div>
+    <div class="shoutout star">
+      <span class="emoji">🥈</span>
+      <div>
+        <b>Võ Đặng Tú Quyên - Về Đích 100%, Chỉ Kém Quán Quân 0.09 Điểm</b>
+        <p>Tú Quyên đạt điểm tối đa ở tiêu chí % hoàn thành target (144/144 chai), tỷ lệ chốt 7.5% cao hơn trung bình team và đứng #2 doanh thu nhóm nhân viên (12.25 triệu đồng). Hai kỳ liên tiếp nằm trong Top 2 - một Admin bán ổn định và là hình mẫu dẫn nhịp ca cho cả team.</p>
+      </div>
+    </div>
+    <div class="shoutout warm">
+      <span class="emoji">🥉</span>
+      <div>
+        <b>Tăng Quế Nhi - Tiến Độ Sát Đích 93.5%</b>
+        <p>Quế Nhi vào Top 3 nhờ tiến độ cao thứ 3 team (116/124 chai, chỉ thiếu 8 chai) và đóng góp 9.38 triệu đồng doanh thu. Để giữ vị trí ở kỳ tới, Quế Nhi cần nâng tỷ lệ chốt đơn từ 4.9% lên trên mức trung bình 6.4%.</p>
+      </div>
+    </div>
+    <div class="shoutout pt-hero">
+      <span class="emoji">💪</span>
+      <div>
+        <b>Thanh Thảo - Part-Time Hoàn Thành 100% Chỉ Tiêu</b>
+        <p>Trong quỹ giờ Part-Time giới hạn, Thanh Thảo vẫn bán đủ 46/46 chai và đạt điểm tối đa ở tiêu chí % hoàn thành target. Điểm tổng 5.25 xếp #4 do số chai tuyệt đối của nhóm PT thấp hơn FT theo số ca làm việc.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ĐÁNH GIÁ CÁ NHÂN -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Chi Tiết Từng Thành Viên</span>
+      <h2>Đánh Giá Cá Nhân Team Admin</h2>
+      <p>Xếp theo bảng điểm 3 tiêu chí · Tháng 9 Giai đoạn 2 · 01/09-30/09/2026</p>
+    </div>
+    <div class="emp-grid">
+
+      <div class="card emp-card top">
+        <div class="emp-head">
+          <div><div class="emp-name">🥇 Nguyễn Lê Minh Thư</div><div class="emp-role">CS Full-Time · 8.17 điểm</div></div>
+          <span class="emp-badge gold">Quán Quân</span>
+        </div>
+        <div class="emp-stats">
+          <div class="emp-stat"><div class="v">214/303</div><div class="l">Chai / TG</div></div>
+          <div class="emp-stat"><div class="v">70.6%</div><div class="l">Tiến độ</div></div>
+          <div class="emp-stat"><div class="v">8.7%</div><div class="l">Chốt đơn</div></div>
+          <div class="emp-stat"><div class="v">17.5M₫</div><div class="l">Doanh thu</div></div>
+        </div>
+        <div class="emp-notes">
+          <div class="row"><span class="tag good">Tốt:</span><span>Bán nhiều chai nhất và chốt đơn cao nhất team, gánh target lớn nhất (303 chai).</span></div>
+          <div class="row"><span class="tag warn">Cải thiện:</span><span>Còn thiếu 89 chai. Với 1.941 hóa đơn, thêm khoảng 4 chai mỗi ca là đạt 100%.</span></div>
+        </div>
+      </div>
+
+      <div class="card emp-card top">
+        <div class="emp-head">
+          <div><div class="emp-name">🥈 Võ Đặng Tú Quyên</div><div class="emp-role">Admin · 8.08 điểm</div></div>
+          <span class="emp-badge gold">Đạt 100%</span>
+        </div>
+        <div class="emp-stats">
+          <div class="emp-stat"><div class="v">144/144</div><div class="l">Chai / TG</div></div>
+          <div class="emp-stat"><div class="v">100.0%</div><div class="l">Tiến độ</div></div>
+          <div class="emp-stat"><div class="v">7.5%</div><div class="l">Chốt đơn</div></div>
+          <div class="emp-stat"><div class="v">12.2M₫</div><div class="l">Doanh thu</div></div>
+        </div>
+        <div class="emp-notes">
+          <div class="row"><span class="tag good">Tốt:</span><span>Hoàn thành trọn vẹn chỉ tiêu, tỷ lệ chốt cao hơn trung bình team.</span></div>
+          <div class="row"><span class="tag warn">Cải thiện:</span><span>Là Admin, kỳ tới cần dẫn nhịp cả ca: brief đầu ca, báo tiến độ, kèm bạn chốt thấp.</span></div>
+        </div>
+      </div>
+
+      <div class="card emp-card top">
+        <div class="emp-head">
+          <div><div class="emp-name">🥉 Tăng Quế Nhi</div><div class="emp-role">Admin · 5.96 điểm</div></div>
+          <span class="emp-badge warn">Thiếu 8 chai</span>
+        </div>
+        <div class="emp-stats">
+          <div class="emp-stat"><div class="v">116/124</div><div class="l">Chai / TG</div></div>
+          <div class="emp-stat"><div class="v">93.5%</div><div class="l">Tiến độ</div></div>
+          <div class="emp-stat"><div class="v">4.9%</div><div class="l">Chốt đơn</div></div>
+          <div class="emp-stat"><div class="v">9.4M₫</div><div class="l">Doanh thu</div></div>
+        </div>
+        <div class="emp-notes">
+          <div class="row"><span class="tag good">Tốt:</span><span>Tiến độ cao thứ 3 team, chỉ còn cách mốc 100% đúng 8 chai.</span></div>
+          <div class="row"><span class="tag warn">Cải thiện:</span><span>Tỷ lệ chốt 4.9% dưới trung bình. Là Admin, cần chốt tốt hơn để làm gương và nhắc nhịp nhân viên trong ca.</span></div>
+        </div>
+      </div>
+
+      <div class="card emp-card">
+        <div class="emp-head">
+          <div><div class="emp-name">Thanh Thảo</div><div class="emp-role">Cashier PT · 5.25 điểm</div></div>
+          <span class="emp-badge">Đạt 100%</span>
+        </div>
+        <div class="emp-stats">
+          <div class="emp-stat"><div class="v">46/46</div><div class="l">Chai / TG</div></div>
+          <div class="emp-stat"><div class="v">100.0%</div><div class="l">Tiến độ</div></div>
+          <div class="emp-stat"><div class="v">5.5%</div><div class="l">Chốt đơn</div></div>
+          <div class="emp-stat"><div class="v">3.2M₫</div><div class="l">Doanh thu</div></div>
+        </div>
+        <div class="emp-notes">
+          <div class="row"><span class="tag good">Tốt:</span><span>Hoàn thành đủ chỉ tiêu trong quỹ giờ Part-Time.</span></div>
+          <div class="row"><span class="tag warn">Cải thiện:</span><span>Tỷ lệ chốt 5.5% dưới trung bình - nâng tỷ lệ chốt trên mỗi ca để vượt target ở kỳ tới.</span></div>
+        </div>
+      </div>
+
+      <div class="card emp-card">
+        <div class="emp-head">
+          <div><div class="emp-name">Quách Vy</div><div class="emp-role">Cashier PT · 5.02 điểm</div></div>
+          <span class="emp-badge warn">Thiếu 11 chai</span>
+        </div>
+        <div class="emp-stats">
+          <div class="emp-stat"><div class="v">48/59</div><div class="l">Chai / TG</div></div>
+          <div class="emp-stat"><div class="v">81.4%</div><div class="l">Tiến độ</div></div>
+          <div class="emp-stat"><div class="v">7.5%</div><div class="l">Chốt đơn</div></div>
+          <div class="emp-stat"><div class="v">4.1M₫</div><div class="l">Doanh thu</div></div>
+        </div>
+        <div class="emp-notes">
+          <div class="row"><span class="tag note">Ghi nhận:</span><span>Tỷ lệ chốt 7.5%, cao hơn trung bình team.</span></div>
+          <div class="row"><span class="tag warn">Cải thiện:</span><span>Còn thiếu 11 chai. Tập trung mời khách ở giờ đông trong mỗi ca hiện có để tăng số chai mỗi ca.</span></div>
+        </div>
+      </div>
+
+      <div class="card emp-card low">
+        <div class="emp-head">
+          <div><div class="emp-name">Lê Uyên Nhi</div><div class="emp-role">SC Full-Time · 4.55 điểm</div></div>
+          <span class="emp-badge warn">Cần tăng tỷ lệ chốt</span>
+        </div>
+        <div class="emp-stats">
+          <div class="emp-stat"><div class="v">140/244</div><div class="l">Chai / TG</div></div>
+          <div class="emp-stat"><div class="v">57.4%</div><div class="l">Tiến độ</div></div>
+          <div class="emp-stat"><div class="v">5.7%</div><div class="l">Chốt đơn</div></div>
+          <div class="emp-stat"><div class="v">11.7M₫</div><div class="l">Doanh thu</div></div>
+        </div>
+        <div class="emp-notes">
+          <div class="row"><span class="tag note">Ghi nhận:</span><span>Phục vụ nhiều hóa đơn nhất team (2.019) - nguồn khách rất lớn.</span></div>
+          <div class="row"><span class="tag warn">Cải thiện:</span><span>Còn thiếu 104 chai. Nâng tỷ lệ chốt lên 7.5% sẽ có thêm khoảng 36 đơn - mời 100% khách thanh toán, ưu tiên đơn gia đình.</span></div>
+        </div>
+      </div>
+
+      <div class="card emp-card low">
+        <div class="emp-head">
+          <div><div class="emp-name">Phan Thị Chúc Linh</div><div class="emp-role">Admin · 3.98 điểm</div></div>
+          <span class="emp-badge warn">Chốt đơn thấp</span>
+        </div>
+        <div class="emp-stats">
+          <div class="emp-stat"><div class="v">79/99</div><div class="l">Chai / TG</div></div>
+          <div class="emp-stat"><div class="v">79.8%</div><div class="l">Tiến độ</div></div>
+          <div class="emp-stat"><div class="v">4.0%</div><div class="l">Chốt đơn</div></div>
+          <div class="emp-stat"><div class="v">6.2M₫</div><div class="l">Doanh thu</div></div>
+        </div>
+        <div class="emp-notes">
+          <div class="row"><span class="tag note">Ghi nhận:</span><span>Phục vụ 1.695 hóa đơn - đủ lượng khách để cải thiện nhanh.</span></div>
+          <div class="row"><span class="tag warn">Cải thiện:</span><span>Còn thiếu 20 chai, tỷ lệ chốt 4.0%. Luyện lại câu mời 10 giây; là Admin cần đứng quầy làm mẫu và giám sát ca.</span></div>
+        </div>
+      </div>
+
+      <div class="card emp-card low">
+        <div class="emp-head">
+          <div><div class="emp-name">Phan Thị Thùy Dương</div><div class="emp-role">Cashier PT · 0.00 điểm</div></div>
+          <span class="emp-badge warn">Cần Hỗ Trợ Thêm</span>
+        </div>
+        <div class="emp-stats">
+          <div class="emp-stat"><div class="v">37/104</div><div class="l">Chai / TG</div></div>
+          <div class="emp-stat"><div class="v">35.6%</div><div class="l">Tiến độ</div></div>
+          <div class="emp-stat"><div class="v">3.1%</div><div class="l">Chốt đơn</div></div>
+          <div class="emp-stat"><div class="v">3.2M₫</div><div class="l">Doanh thu</div></div>
+        </div>
+        <div class="emp-notes">
+          <div class="row"><span class="tag note">Ghi nhận:</span><span>Nhận target cao nhất nhóm Part-Time (104 chai).</span></div>
+          <div class="row"><span class="tag warn">Cải thiện:</span><span>Còn thiếu 67 chai, tỷ lệ chốt thấp nhất team. Cần được Admin trực ca kèm trực tiếp tại quầy để nâng tỷ lệ chốt trên mỗi ca hiện có.</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- PUSH SALE THÁNG 10 -->
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow-inline">Bước Tiếp Theo · 01/10 - 31/10/2026</span>
+      <h2>📈 Push Sale Tháng 10: Giữ Sữa Tắm, Thêm 2 Sản Phẩm Mới</h2>
+    </div>
+    <div class="card pivot-card">
+      <p class="lead">Tháng 10 team chạy 3 sản phẩm: <strong>Sữa Tắm On: The Body</strong> tiếp tục là sản phẩm chủ lực, <strong>Xịt Muỗi Remos</strong> khép lại sau khi đã vượt chỉ tiêu, nhường chỗ cho <strong>Kem Dưỡng Tay Hatomugi</strong> và <strong>Son Dưỡng Môi Menturm</strong>. Kỳ này có 2 Ngày Kohnan (5/10, 20/10), trong đó 20/10 trùng Ngày Phụ Nữ Việt Nam.</p>
+
+      <div class="pivot-stats">
+        <div class="pstat">
+          <div class="pv">800</div>
+          <div class="pl">🧴 Chai Sữa Tắm</div>
+          <div class="pp">99.000đ · Combo 2 chai 198.000đ</div>
+        </div>
+        <div class="pstat">
+          <div class="pv">120</div>
+          <div class="pl">🤲 Tuýp Kem Tay Hatomugi</div>
+          <div class="pp">49.000đ (giá gốc 89.000đ)</div>
+        </div>
+        <div class="pstat">
+          <div class="pv">120</div>
+          <div class="pl">💋 Thỏi Son Dưỡng Menturm</div>
+          <div class="pp">39.000đ · Bộ đôi Kem tay + Son 88.000đ</div>
+        </div>
+      </div>
+
+      <h3 class="why-title">🧴 Vì sao chạy tiếp Sữa Tắm?</h3>
+      <div class="why-grid three">
+        <div class="gd2-arrow">
+          <div class="a-icon">✅</div>
+          <div>
+            <b>Mục tiêu 800 chai nằm trong tầm tay</b>
+            <p>Giai đoạn 2 team đã bán 832 chai Sữa Tắm. Chỉ tiêu tháng 10 là 800 chai, thấp hơn số team đã làm được, tương đương khoảng 26 chai mỗi ngày (Giai đoạn 2 trung bình 28 chai/ngày). Giữ đúng nhịp cũ là về đích.</p>
+          </div>
+        </div>
+        <div class="gd2-arrow">
+          <div class="a-icon">💰</div>
+          <div>
+            <b>Khách đã quen, đơn giá cao nhất quầy</b>
+            <p>Sau 2 giai đoạn, khách quen của cửa hàng đã biết và dùng lại sản phẩm, team cũng thuộc kịch bản. Với 99.000đ/chai, mỗi lượt mời thành công vẫn mang về doanh thu lớn nhất trong 3 sản phẩm.</p>
+          </div>
+        </div>
+        <div class="gd2-arrow">
+          <div class="a-icon">💐</div>
+          <div>
+            <b>Ngày 20/10 là dịp quà tặng</b>
+            <p>Sữa tắm nước hoa là món quà dễ chọn cho Ngày Phụ Nữ Việt Nam. Ngày 20/10 vừa là Kohnan Day giảm 5% vừa là ngày lễ, cùng cuối tuần 17-18/10 trước đó là cơ hội bán combo lớn nhất tháng.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="why-title">🤲💋 Vì sao thay Xịt Muỗi bằng Kem Tay &amp; Son Dưỡng?</h3>
+      <div class="why-grid">
+        <div class="gd2-arrow">
+          <div class="a-icon">🏁</div>
+          <div>
+            <b>Remos đã hoàn thành nhiệm vụ</b>
+            <p>Xịt Muỗi Remos vượt 107.7% chỉ tiêu Giai đoạn 2. Mùa mưa qua dần, nhu cầu chống muỗi giảm - đây là lúc chuyển sang sản phẩm đúng mùa hơn.</p>
+          </div>
+        </div>
+        <div class="gd2-arrow">
+          <div class="a-icon">🍂</div>
+          <div>
+            <b>Đúng mùa hanh khô cuối năm</b>
+            <p>Tháng 10 bắt đầu hanh khô, tay và môi dễ nứt. Kem tay hạt ý dĩ và son dưỡng Nhật là món khách cần ngay, chỉ cần nhắc là khách hiểu.</p>
+          </div>
+        </div>
+        <div class="gd2-arrow">
+          <div class="a-icon">⚡</div>
+          <div>
+            <b>Giá nhỏ, dễ mời thêm khi tính tiền</b>
+            <p>39.000đ - 49.000đ là mức giá khách quyết định trong vài giây, phù hợp mời khi thối tiền. Bộ đôi Kem tay + Son 88.000đ và bộ quà 20/10 (Sữa Tắm + Kem tay + Son) 187.000đ giúp tăng giá trị mỗi đơn.</p>
+          </div>
+        </div>
+        <div class="gd2-arrow">
+          <div class="a-icon">🔥</div>
+          <div>
+            <b>Sản phẩm mới, động lực mới</b>
+            <p>Sản phẩm mới cho cả team một vạch xuất phát chung. Các bạn có tỷ lệ chốt chưa cao ở Giai đoạn 2 có cơ hội bứt lên ngay từ tuần đầu với sản phẩm dễ bán hơn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LỜI KẾT -->
+  <div class="section">
+    <div class="closing">
+      <div class="rocket">🚀</div>
+      <h3>Tháng 10: Mỗi Ca Một Người Dẫn Nhịp!</h3>
+      <p>Giai đoạn 2 cho thấy team bán tốt khi có người nhắc nhịp và làm mẫu ngay tại quầy. Tháng 10 team đã có Sữa Tắm quen tay, thêm Kem Tay và Son Dưỡng giá nhỏ dễ mời, cùng dịp 20/10. Mỗi bạn Admin kéo cả ca cùng bán, mỗi nhân viên mời đủ 100% khách thanh toán - chỉ tiêu tháng 10 sẽ về đích trọn vẹn.</p>
+      <div class="cta-row">
+        <span class="cta-pill">🧴 800 Chai Sữa Tắm</span>
+        <span class="cta-pill">🤲 120 Kem Tay · 💋 120 Son Dưỡng</span>
+        <span class="cta-pill">💐 Bứt Phá Ngày 20/10</span>
+        <span class="cta-pill">👀 Admin Dẫn Nhịp Từng Ca</span>
+      </div>
+      <div class="sign">Team Admin Sales Tracker · Kohnan POS Push Sale Campaign · Tháng 9/2026 - Giai đoạn 2</div>
+    </div>
+  </div>
+
+
+</div>
+
+</body></html>
